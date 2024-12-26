@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Inter&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+
+  <link rel="stylesheet" href="css_controler/style.css">
+
+  <title>Amigo Secreto</title>
+
+</head>
+
+<body>
+  <main>
+
+    <div class="conteiner_principal">
+
+      <div class="conteiner_conteudo">
+        <img class="imagem_presente" src="img_controler/imagem-presente.png" alt="Imagem de um presente">
+
+        <section>
+          <h1 class="titulo_personalizado">Amigo <span>Secreto</span></h1>
+
+          <div class="formulario">
+            <label id="texto_alerta" class="titulo_formulario">Adicione nome na lista:</label>
+            <input id="input_nome" class="input_formulario" type="text" placeholder="Nome do amigo">
+
+            <div class="botoes_formulario">
+              <button onclick="adicionar()" type="button" class="botoes" id="botao_adicionar">Adicionar</button>
+              <button onclick="reiniciar()" type="button" class="botoes" id="botao_reiniciar">Reiniciar</button>
+              <button onclick="sortear()" type="button" class="botoes" id="botao_sortear">Sortear</button>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="resultado">
+
+          <article>
+            <h1 class="titulo_lista">Lista de amigos:</h1>
+
+            <div class="lista_amigos">
+              <p id="nome_amigos">Lista vazía!</p>
+
+            </div>
+
+            <article id="sorteio">
+              <p></p>
+              <div>
+                <p></p>
+              </div>
+
+            </article>
+
+          </article>
+
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div class="conteiner_fundo"></div>
+
+    <script src="js_controler/app.js"></script>
+
+</body>
+
+</html>
